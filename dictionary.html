@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,23 @@
     <link href="assets/custom.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/4.1.5/cash.min.js"></script>
 </head>
+
 <body>
     <header>
         <h1>English-Interlingua dictionary</h1>
-        <p><span id="count">0</span> vocables translated</p>
-        <p>Downloads: <a href="LaTeX/dictionary.pdf"><code>dictionary.pdf</code></a>
-        <a href="assets/dictionary.csv"><code>dictionary.csv</code></a></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grammar.html">Short grammar</a></li>
+                <li><a href="booklet.html">Reference grammar</a></li>
+            </ul>
+        </nav>
+        <p class="info"><span id="count">0</span> vocables translated</p>
+        <p class="info">Downloads: <a href="dictionary/dictionary.pdf"><code>dictionary.pdf</code></a> <a
+                href="dictionary/dictionary.csv"><code>dictionary.csv</code></a></p>
         <hr>
         <p>This dictionary covers (amog others) all the words on the page <a
-        href="http://mi.anihost.ru/Peano/lsfdic.htm">mi.anihost.ru</a>.</p>
+                href="http://mi.anihost.ru/Peano/lsfdic.htm">mi.anihost.ru</a>.</p>
     </header>
     <main>
         <table id="tab">
@@ -34,54 +43,18 @@
                     <th></th>
                 </tr>
             </thead>
-            <tbody id="dict">
-            </tbody>
+            <tbody id="dict"> </tbody>
         </table>
     </main>
     <footer>
-        <p>This work is licensed under a <a rel="license"
-        href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
-        Attribution-NonCommercial 4.0 International License</a>.</p>
+        <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative
+                Commons Attribution-NonCommercial 4.0 International License</a>.</p>
     </footer>
     </script>
     <script src="assets/d3.min.js"></script>
-    <script type="text/javascript"charset="utf-8">
-        d3.text("assets/dictionary.csv", function(data) {
-            var parsedCSV = d3.csv.parseRows(data);
-            var container = d3.select("tbody")
-                .selectAll("tr").data(parsedCSV).enter()
-                .append("tr").selectAll("td").data(function(d) { return d; })
-                .enter().append("td").text(function(d) { return d; });
-            document.getElementById('count').innerHTML =
-                document.getElementsByTagName('tr').length - 1;
-        });
-    </script>
-    <script>
-        function search(col, id) {
-            var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById(id);
-            filter = input.value.toUpperCase();
-            table = document.getElementById('tab');
-            tr = table.getElementsByTagName("tr");
-            // Clean the other bar
-            if (id == 'bar') {
-                document.getElementById('bar2').value = '';
-            } else {
-                document.getElementById('bar').value = '';
-            }
-            // Search
-            for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[col];
-                if (td) {
-                    txtValue = td.textContent || td.innerText;
-                    if (txtValue.toUpperCase().startsWith(filter)) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }       
-            }
-        }
-    </script>
+    <script type="text/javascript"
+        charset="utf-8"> d3.text("assets/dictionary.csv", function (data) { var parsedCSV = d3.csv.parseRows(data); var container = d3.select("tbody").selectAll("tr").data(parsedCSV).enter().append("tr").selectAll("td").data(function (d) { return d; }).enter().append("td").text(function (d) { return d; }); document.getElementById('count').innerHTML = document.getElementsByTagName('tr').length - 1; }); </script>
+    <script> function search(col, id) { var input, filter, table, tr, td, i, txtValue; input = document.getElementById(id); filter = input.value.toUpperCase(); table = document.getElementById('tab'); tr = table.getElementsByTagName("tr"); if (id == 'bar') { document.getElementById('bar2').value = ''; } else { document.getElementById('bar').value = ''; } for (i = 0; i < tr.length; i++) { td = tr[i].getElementsByTagName("td")[col]; if (td) { txtValue = td.textContent || td.innerText; if (txtValue.toUpperCase().startsWith(filter)) { tr[i].style.display = ""; } else { tr[i].style.display = "none"; } } } } </script>
 </body>
+
 </html>

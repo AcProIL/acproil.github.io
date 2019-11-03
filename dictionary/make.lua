@@ -1,6 +1,6 @@
 -- Regex to find duplicated lines: ^(.*),(.*),.*,.*\n\1,\2
 
-local source = io.open ('../assets/dictionary.csv', 'r')
+local source = io.open ('dictionary.csv', 'r')
 local tex = [[
 % Inspired by a template by Marc Lavaud
 
