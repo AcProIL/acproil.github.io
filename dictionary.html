@@ -53,7 +53,7 @@
     </script>
     <script src="assets/d3.min.js"></script>
     <script type="text/javascript"
-        charset="utf-8"> d3.text("assets/dictionary.csv", function (data) { var parsedCSV = d3.csv.parseRows(data); var container = d3.select("tbody").selectAll("tr").data(parsedCSV).enter().append("tr").selectAll("td").data(function (d) { return d; }).enter().append("td").text(function (d) { return d; }); document.getElementById('count').innerHTML = document.getElementsByTagName('tr').length - 1; }); </script>
+        charset="utf-8"> d3.text("dictionary/dictionary.csv", function (data) { var parsedCSV = d3.csv.parseRows(data); var container = d3.select("tbody").selectAll("tr").data(parsedCSV).enter().append("tr").selectAll("td").data(function (d) { return d; }).enter().append("td").text(function (d) { return d; }); document.getElementById('count').innerHTML = document.getElementsByTagName('tr').length - 1; }); </script>
     <script> function search(col, id) { var input, filter, table, tr, td, i, txtValue; input = document.getElementById(id); filter = input.value.toUpperCase(); table = document.getElementById('tab'); tr = table.getElementsByTagName("tr"); if (id == 'bar') { document.getElementById('bar2').value = ''; } else { document.getElementById('bar').value = ''; } for (i = 0; i < tr.length; i++) { td = tr[i].getElementsByTagName("td")[col]; if (td) { txtValue = td.textContent || td.innerText; if (txtValue.toUpperCase().startsWith(filter)) { tr[i].style.display = ""; } else { tr[i].style.display = "none"; } } } } </script>
 </body>
 
