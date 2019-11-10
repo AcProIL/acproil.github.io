@@ -1,13 +1,14 @@
 % Inspired by a template by Marc Lavaud
 
-\documentclass[twocolumn, 8pt]{amsbook}
-\usepackage[paperwidth=10.79cm, paperheight=17.46cm]{geometry}
+\documentclass[8pt]{amsbook}
+\usepackage[paperwidth=6in, paperheight=9in]{geometry}
 
-\usepackage{kpfonts}
+\usepackage{concrete, euler}
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
 \usepackage{ifthen}
 \usepackage{graphicx}
+\usepackage{multicol}
 
 \usepackage{fancyhdr}
 \fancyhead[L]{\rightmark} % Top left header
@@ -17,11 +18,12 @@
 
 \newcommand{\entry}[4]{\par\noindent\textbf{#1}\markboth{#1}{#1} #2. #3\ifthenelse{\equal{#4}{}}{}{ \textit{#4}}}
 
-\title{English-Latino~sine~Flexione Dictionary\vspace{1cm}
-\centering\includegraphics[width=\linewidth]{../assets/logo.png}}
+\title{English-Latino~sine~Flexione Dictionary}
+\author{Academia pro~Interlingua}
 
 \begin{document}
 \maketitle
+\begin{multicols}{2}
 
 \section*{A}
 \entry{a}{art}{uno}{}
@@ -81,6 +83,7 @@
 \entry{arrange}{vt}{ordina}{}
 \entry{arrears}{n}{arretrato}{}
 \entry{art}{n}{arte}{Arte imita natura.}
+\entry{article}{n}{articulo}{}
 \entry{ass (zool)}{n}{asino}{}
 \entry{assent}{vi}{annue}{}
 \entry{associate}{n}{socio}{}
@@ -174,11 +177,6 @@
 \entry{bugle}{n}{bucina}{}
 \entry{building}{n}{fabrica}{}
 \entry{bulk}{n}{massa}{}
-
-\section*{F}
-\entry{fast}{adj}{veloce}{}
-
-\section*{B}
 \entry{bundle}{n}{fasce}{}
 \entry{bust (chest)}{n}{pectore}{}
 \entry{butcher}{vt}{trucida}{}
@@ -444,6 +442,7 @@
 \entry{faithful}{adj}{fidele}{}
 \entry{farmer}{n}{agricola}{}
 \entry{farrago}{n}{farragine}{}
+\entry{fast}{adj}{veloce}{}
 \entry{fate (random)}{n}{sorte}{}
 \entry{father}{n}{patre}{}
 \entry{fatigued}{adj}{fesso}{}
@@ -1358,4 +1357,4 @@
 
 \section*{Z}
 \entry{zither}{n}{cithara}{}
-\end{document}
+\end{multicols}\end{document}

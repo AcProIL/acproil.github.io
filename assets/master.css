@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+:root {
+	--color: DarkRed;
+}
+blockquote {
+	border-left: .5ch solid var(--color);
+	padding-left: 1ch;
+}
+blockquote footer {
+	text-align: right;
+}
+body {
+	background-color: snow;
+	font-family: 'Quattrocento', 'Palatino', serif;
+	margin: auto;
+	width: 70vw;
+	max-width: 80ch;
+	padding: 4em 5vw;
+	font-size: 14pt;
+}
+code, pre {
+	background-color: #eee;
+	font-family: 'Inconsolata', monospace;
+}
+figure {
+	text-align: center;
+}
+figure img {
+	max-width: 80%;
+}
+footer, header {
+	color: gray;
+}
+table {
+	font-size: 12pt;
+	table-layout: fixed;
+}
+h1, h2, h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: .2ch;
+}
+h1, h2, h3, a {
+	color: var(--color);
+}
+img {
+	float: right;
+}
+header div {
+	float: left;
+}
+header h1 {
+	margin: 0 auto;
+}
+header div, nav {
+	margin: 12pt auto;
+}
+header p {
+	margin-top: 0;
+}
+main {
+	line-height: 1.5;
+}
+html {
+	background-color: snow;
+	background: url('pattern.png');
+	image-rendering: pixelated;
+	background-size: 12vw;
+}
+main {
+	clear: both;
+}
+body > footer {
+	text-align: center;
+}
+main p {
+	text-align: justify;
+	text-indent: 2ch;
+}
+nav {
+	background-color: #eee;
+}
+nav ul li {
+	display: inline-block;
+	margin: auto 6pt;
+}
+nav ul {
+	list-style: none;
+	margin: 6pt 2pt;
+	padding-left: 0;
+}
+nav {
+	float: right;
+	text-align: right;
+}
+pre {
+	padding: 4pt;
+}
+table {
+	border: 1px solid #666;
+	padding: 6px;
+	width: 100%;
+}
+th {
+	background-color: #eee;
+	text-align: left;
+}
