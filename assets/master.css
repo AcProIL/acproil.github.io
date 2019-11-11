@@ -67,6 +67,10 @@ html {
 	background: url('pattern.png');
 	image-rendering: pixelated;
 	background-size: 12vw;
+<<<<<<< HEAD
+	margin-left: calc(100vw - 100%);
+=======
+>>>>>>> 7d5f05e030033cd6d75ebda677ab5dbee50e65a8
 }
 main {
 	clear: both;
