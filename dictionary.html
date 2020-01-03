@@ -2,54 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English-Interlingua dictionary</title>
-    <link href="assets/master.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English-Interlingua dictionary</title>
+  <link href="assets/master.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>English-Interlingua dictionary</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="grammar.html">Short grammar</a></li>
-                <li><a href="booklet.pdf">Reference grammar</a></li>
-            </ul>
-        </nav>
-        <p class="info"><span id="count">0</span> vocables translated</p>
-        <p class="info">Downloads: <a href="dictionary/dictionary.pdf"><code>dictionary.pdf</code></a> <a
-                href="dictionary/dictionary.csv"><code>dictionary.csv</code></a></p>
-    </header>
-    <main>
-        <table id="tab">
-            <thead>
-                <tr>
-                    <th style="width: 30%;">English</th>
-                    <th style="width: 10%;">PoS</th>
-                    <th style="width: 25%;">Interlingua</th>
-                    <th style="width: 35%;">Example</th>
-                </tr>
-                <tr>
-                    <th><input type="text" onkeyup="search(0, 'bar')" placeholder="rose" id="bar"></th>
-                    <th></th>
-                    <th><input type="text" onkeyup="search(2, 'bar2')" placeholder="rosa" id="bar2"></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id="dict"> </tbody>
-        </table>
-    </main>
-    <footer>
-        <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative
-                Commons Attribution-NonCommercial 4.0 International License</a>.</p>
-    </footer>
-    </script>
-    <script src="assets/d3.min.js"></script>
-    <script type="text/javascript"
-        charset="utf-8"> d3.text("dictionary/dictionary.csv", function (data) { var parsedCSV = d3.csv.parseRows(data); var container = d3.select("tbody").selectAll("tr").data(parsedCSV).enter().append("tr").selectAll("td").data(function (d) { return d; }).enter().append("td").text(function (d) { return d; }); document.getElementById('count').innerHTML = document.getElementsByTagName('tr').length - 1; }); </script>
-    <script> function search(col, id) { var input, filter, table, tr, td, i, txtValue; input = document.getElementById(id); filter = input.value.toUpperCase(); table = document.getElementById('tab'); tr = table.getElementsByTagName("tr"); if (id == 'bar') { document.getElementById('bar2').value = ''; } else { document.getElementById('bar').value = ''; } for (i = 0; i < tr.length; i++) { td = tr[i].getElementsByTagName("td")[col]; if (td) { txtValue = td.textContent || td.innerText; if (txtValue.toUpperCase().startsWith(filter)) { tr[i].style.display = ""; } else { tr[i].style.display = "none"; } } } } </script>
+  <header>
+    <h1>English-Interlingua dictionary</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="grammar.html">Short grammar</a></li>
+        <li><a href="booklet.pdf">Reference grammar</a></li>
+      </ul>
+    </nav>
+    <p><span class="info">
+        <span id="count">0</span> vocables translated</br>
+      </span><span class="info">Downloads: <a href="dictionary/dictionary.pdf">
+          <code>dictionary.pdf</code></a> <a href="dictionary/dictionary.csv">
+          <code>dictionary.csv</code></a></span></p>
+  </header>
+  <main>
+    <table id="tab">
+      <thead>
+        <tr>
+          <th style="width: 30%;">English</th>
+          <th style="width: 10%;">PoS</th>
+          <th style="width: 25%;">Interlingua</th>
+          <th style="width: 35%;">Example</th>
+        </tr>
+        <tr>
+          <th><input type="text" onkeyup="search(0, 'bar')" placeholder="rose" id="bar"></th>
+          <th></th>
+          <th><input type="text" onkeyup="search(2, 'bar2')" placeholder="rosa" id="bar2"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="dict"> </tbody>
+    </table>
+  </main>
+  <footer>
+    <p>This work is licensed under a
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative
+        Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+  </footer>
+  </script>
+  <script src="assets/d3.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    d3.text("dictionary/dictionary.csv", function(data) {
+      var parsedCSV = d3.csv.parseRows(data);
+      var container = d3.select("tbody").selectAll("tr").data(parsedCSV).enter()
+        .append("tr").selectAll("td").data(function(d) {
+          return d;
+        }).enter().append("td").text(function(d) {
+          return d;
+        });
+      document.getElementById('count').innerHTML = document.getElementsByTagName('tr').length - 1;
+    });
+  </script>
+  <script>
+    function search(col, id) {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById(id);
+      filter = input.value.toUpperCase();
+      table = document.getElementById('tab');
+      tr = table.getElementsByTagName("tr");
+      if (id == 'bar') {
+        document.getElementById('bar2').value = '';
+      } else {
+        document.getElementById('bar').value = '';
+      }
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[col];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().startsWith(filter)) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>
