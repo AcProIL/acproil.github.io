@@ -32,6 +32,9 @@ figure img {
 footer, header {
 	color: gray;
 }
+footer {
+	font-size: 72%;
+}
 table {
 	font-size: 12pt;
 	table-layout: fixed;
@@ -104,9 +107,6 @@ table {
 th {
 	background-color: #eee;
 	text-align: left;
-}
-.info, footer {
-	font-size: 72%;
 }
 .info:before {
 	content: '☞ ';
