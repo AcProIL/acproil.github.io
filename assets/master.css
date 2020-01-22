@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quattrocento&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
 :root {
 	--color: DarkRed;
 }
@@ -17,7 +18,7 @@ body {
 	width: 70vw;
 	max-width: 80ch;
 	padding: 4em 5vw;
-	font-size: 14pt;
+	font-size: 14px;
 }
 code, pre {
 	background-color: #eee;
@@ -99,8 +100,10 @@ nav ul {
 pre {
 	padding: 4pt;
 }
-table {
+table, .fbox {
 	border: 1px solid #666;
+}
+table {
 	padding: 6px;
 	width: 100%;
 }
@@ -110,4 +113,10 @@ th {
 }
 .info:before {
 	content: '☞ ';
+}
+
+@media only screen and (max-width: 500px) {
+	main p {
+		text-align: left;
+	}
 }
