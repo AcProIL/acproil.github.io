@@ -4,6 +4,7 @@
 :root {
 	--color: DarkRed;
 }
+
 blockquote {
 	border-left: .5ch solid var(--color);
 	padding-left: 1ch;
@@ -50,6 +51,8 @@ h1, h2, h3, a {
 }
 img {
 	float: right;
+	max-width: 200px;
+	width: 60%;
 }
 header div {
 	float: left;
