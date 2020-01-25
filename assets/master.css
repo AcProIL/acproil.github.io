@@ -41,13 +41,16 @@ table {
 	font-size: 12pt;
 	table-layout: fixed;
 }
-h1, h2, h3 {
-	text-transform: uppercase;
-	font-weight: normal;
-	letter-spacing: .2ch;
-}
 h1, h2, h3, a {
 	color: var(--color);
+}
+h1, h2, h3 {
+
+}
+h1, h2 {
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: .2ch;
 }
 img {
 	float: right;
