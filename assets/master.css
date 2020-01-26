@@ -9,9 +9,7 @@ blockquote {
 	border-left: .5ch solid var(--color);
 	padding-left: 1ch;
 }
-blockquote footer {
-	text-align: right;
-}
+blockquote footer { text-align: right; }
 body {
 	background-color: snow;
 	font-family: 'Quattrocento', 'Palatino', serif;
@@ -25,27 +23,16 @@ code, pre {
 	background-color: #eee;
 	font-family: 'Inconsolata', monospace;
 }
-figure {
-	text-align: center;
-}
-figure img {
-	max-width: 80%;
-}
-footer, header {
-	color: gray;
-}
-footer {
-	font-size: 72%;
-}
+figure { text-align: center; }
+figure img { max-width: 80%; }
+footer, header { color: gray; }
+footer { font-size: 72%; }
 table {
 	font-size: 12pt;
 	table-layout: fixed;
 }
 h1, h2, h3, a {
 	color: var(--color);
-}
-h1, h2, h3 {
-
 }
 h1, h2 {
 	font-weight: normal;
@@ -57,21 +44,11 @@ img {
 	max-width: 200px;
 	width: 60%;
 }
-header div {
-	float: left;
-}
-header h1 {
-	margin: 0 auto;
-}
-header div, nav {
-	margin: 12pt auto;
-}
-header p {
-	margin-top: 0;
-}
-main {
-	line-height: 1.5;
-}
+header div { float: left; }
+header h1 { margin: 0 auto; }
+header div, nav { margin: 12pt auto; }
+header p { margin-top: 0; }
+main { line-height: 1.5; }
 html {
 	background-color: snow;
 	background: url('pattern.png');
@@ -79,12 +56,8 @@ html {
 	background-size: 12vw;
 	margin-left: calc(100vw - 100%);-
 }
-main {
-	clear: both;
-}
-body > footer {
-	text-align: center;
-}
+main { clear: both; }
+body > footer { text-align: center; }
 main p {
 	text-align: justify;
 	text-indent: 2ch;
@@ -103,12 +76,8 @@ nav ul {
 	margin: 6pt 2pt;
 	padding-left: 0;
 }
-pre {
-	padding: 4pt;
-}
-table, .fbox {
-	border: 1px solid #666;
-}
+pre { padding: 2ch; }
+table, .fbox { border: 1px solid #666; }
 table {
 	padding: 6px;
 	width: 100%;
@@ -117,12 +86,17 @@ th {
 	background-color: #eee;
 	text-align: left;
 }
-.info:before {
-	content: '☞ ';
+.info:before { content: '☞ '; }
+.row { display: flex; }
+.row > section {
+	padding: 10px;
+	width: 50%;
 }
+.small-screen { display: none }
 
-@media only screen and (max-width: 500px) {
-	main p {
-		text-align: left;
-	}
+@media only screen and (max-width: 600px) {
+	main p { text-align: left; }
+	.row { display: block; }
+	.row > section { width: 100%; }
+	.small-screen { display: block; }
 }
