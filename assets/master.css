@@ -2,101 +2,164 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
 :root {
-	--color: DarkRed;
+    --color: DarkRed;
 }
 
 blockquote {
-	border-left: .5ch solid var(--color);
-	padding-left: 1ch;
+    border-left: .5ch solid var(--color);
+    padding-left: 1ch;
 }
-blockquote footer { text-align: right; }
+
+blockquote footer {
+    text-align: right;
+}
+
 body {
-	background-color: snow;
-	font-family: 'Quattrocento', 'Palatino', serif;
-	margin: auto;
-	width: 70vw;
-	max-width: 80ch;
-	padding: 4em 5vw;
-	font-size: 14px;
+    background-color: snow;
+    font-family: 'Quattrocento', 'Palatino', serif;
+    margin: auto;
+    width: 70vw;
+    max-width: 80ch;
+    padding: 4em 5vw;
+    font-size: 14px;
 }
-code, pre {
-	background-color: #eee;
-	font-family: 'Inconsolata', monospace;
+
+code,
+pre {
+    background-color: #eee;
+    font-family: 'Inconsolata', monospace;
 }
-figure { text-align: center; }
-figure img { max-width: 80%; }
-footer, header { color: gray; }
-footer { font-size: 72%; }
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    max-width: 80%;
+}
+
+footer,
+header {
+    color: gray;
+}
+
+footer {
+    font-size: 72%;
+}
+
 table {
-	font-size: 12pt;
-	table-layout: fixed;
+    font-size: 12pt;
+    table-layout: fixed;
 }
-h1, h2, h3, a {
-	color: var(--color);
+
+h1,
+h2,
+h3,
+a {
+    color: var(--color);
 }
-h1, h2 {
-	font-weight: normal;
-	text-transform: uppercase;
-	letter-spacing: .2ch;
+
+h1,
+h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2ch;
 }
+
 img {
-	float: right;
-	max-width: 200px;
-	width: 60%;
+    float: right;
+    max-width: 200px;
+    width: 60%;
 }
-header div { float: left; }
-header h1 { margin: 0 auto; }
-header div, nav { margin: 12pt auto; }
-header p { margin-top: 0; }
-main { line-height: 1.5; }
-html {
-	background-color: snow;
-	background: url('pattern.png');
-	image-rendering: pixelated;
-	background-size: 12vw;
-	margin-left: calc(100vw - 100%);-
+
+header h1 {
+    margin: 0 auto;
 }
-main { clear: both; }
-body > footer { text-align: center; }
-main p {
-	text-align: justify;
-	text-indent: 2ch;
-}
+
 nav {
-	background-color: #eee;
-	padding: 4pt 0;
-	text-align: center;
+    margin: 12pt auto;
 }
+
+header p {
+    margin-top: 0;
+}
+
+main {
+    line-height: 1.5;
+}
+
+html {
+    background-color: snow;
+    background: url('pattern.png');
+    image-rendering: pixelated;
+    background-size: 12vw;
+    margin-left: calc(100vw - 100%);
+    -
+}
+
+main {
+    clear: both;
+}
+
+body > footer {
+    text-align: center;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 2ch;
+}
+
+nav {
+    background-color: #eee;
+    padding: 4pt 0;
+    text-align: center;
+}
+
 nav ul li {
-	display: inline-block;
-	margin: auto 6pt;
+    display: inline-block;
+    margin: auto 6pt;
 }
+
 nav ul {
-	list-style: none;
-	margin: 6pt 2pt;
-	padding-left: 0;
+    list-style: none;
+    margin: 6pt 2pt;
+    padding-left: 0;
 }
-pre { padding: 2ch; }
-table, .fbox { border: 1px solid #666; }
+
+pre {
+    padding: 2ch;
+}
+
+table,
+.fbox {
+    border: 1px solid #666;
+}
+
 table {
-	padding: 6px;
-	width: 100%;
+    padding: 6px;
+    width: 100%;
 }
+
 th {
-	background-color: #eee;
-	text-align: left;
+    background-color: #eee;
+    text-align: left;
 }
-.info:before { content: '☞ '; }
-.row { display: flex; }
-.row > section {
-	padding: 10px;
-	width: 50%;
+
+.info:before {
+    content: '☞ ';
 }
-.small-screen { display: none }
+
+.small-screen {
+    display: none
+}
 
 @media only screen and (max-width: 600px) {
-	main p { text-align: left; }
-	.row { display: block; }
-	.row > section { width: 100%; }
-	.small-screen { display: block; }
+    main p {
+        text-align: left;
+    }
+
+    .small-screen {
+        display: block;
+    }
 }
