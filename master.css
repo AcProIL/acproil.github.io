@@ -1,0 +1,11 @@
+header.hero {
+    background-image: url(img/board.jpg);
+}
+
+header.hero .title, header.hero .subtitle {
+    color: white;
+}
+
+.done {
+    text-decoration: line-through;
+}

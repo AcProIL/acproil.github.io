@@ -4,90 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peano’s Interlingua</title>
-    <link href="assets/master.css" rel="stylesheet">
-    <style>
-        main {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-column-gap: 20px;
-        }
-
-        section:first-child {
-            grid-column: 1/3;
-        }
-
-        @media only screen and (max-width: 600px) {
-            main {
-                grid-template-columns: auto;
-            }
-
-            section:first-child {
-                grid-column: 1;
-            }
-        }
-    </style>
+    <title>Academia pro Interlingua</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 </head>
 
 <body>
-    <header>
-        <h1>Peano’s Interlingua</h1>
-        <p>Academia pro Interlingua</p>
+    <header class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">Latino sine flexione</h1>
+                <p class="subtitle is-3">Simplified Latin for international cooperation</p>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>Introduction</h2>
-            <p><img src="assets/logo.png" alt="logo"> Peano’s Interlingua (also known as <em>Latino sine Flexione</em>: latin without inflexions) is a language constructed by Giuseppe Peano at the beginning of the last century. This simplified Latin is designed to be a instrument for international cooperation, firstly in the academic sphere.</p>
-            <p>After a short <a href="grammar.html">grammar</a> study, everyone can learn to compose in this language using only an Interlingua (or Latin) <a href="dictionary.html">dictionary</a>.</p>
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <h2>Presentation</h2>
+                    <img src="img/logo.png" alt="Logo" style="float: right; width: 200px;">
+                    <p>Peano’s Interlingua (also known as <em>Latino sine flexione</em>: latin without inflexions) is a
+                        language constructed by Giuseppe Peano at the beginning of the last century. This
+                        <strong>simplified Latin</strong> is designed to be a neutral and practical instrument for
+                        international cooperation, firstly in the academic sphere.</p>
+                    <p>After a short grammar study, everyone can learn to compose in this language using only an
+                        Interlingua (or Latin) dictionary.</p>
+                    <blockquote class="blockquote">
+                        <p>The need for an auxiliary language for international relations in the field of science,
+                            commerce, etc., is obvious. Any national language presents a multitude of unnecessary
+                            complications, the mastery of which requires several years of study. Descartes, Leibnitz and
+                            several other philosophers have studied the question of a rational language, simpler and
+                            more logical than natural languages. At that time, Latin was in international use; but
+                            during the past century, the use of national languages in place of Latin, and the
+                            strengthening of international relations, has made the problem of international language
+                            more urgent.</p>
+                        <footer>
+                            — Giuseppe Peano, 1923
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Works in Interlingua</h2>
-            <details>
-                <summary>First wave publications</summary>
-                <h3>Mathematics</h3>
-                <ul>
-                    <li><cite>Theoria De Congruentias</cite>, Michaele Cipolla,&nbsp;1904</li>
-                    <li><cite>Formulario Mathematico</cite>, Giuseppe Peano,&nbsp;1908</li>
-                </ul>
-                <h3>Chemistry</h3>
-                <ul>
-                    <li><cite>Lege de Haüy et lege de symmetria</cite>, R.&nbsp;Panebianco,&nbsp;1922</li>
-                </ul>
-                <h3>Linguistics</h3>
-                <ul>
-                    <li><cite>De Latino Sine Flexione, Lingua Auxiliare Internationale</cite>, Giuseppe Peano,&nbsp;1903</li>
-                    <li><cite><a href="https://wikisource.org/wiki/100_exemplo_de_Interlingua">100 exemplo de Interlingua</a></cite>, Giuseppe Peano,&nbsp;1903</li>
-                    <li><cite>Grammatica de Interlingua</cite>, J.&nbsp;B.&nbsp;Pinth,&nbsp;1915</li>
-                    <li><cite>Vocabulario Commune ad Latino-Italiano-Français-English-Deutsch pro usu de interlinguistas</cite>, Giuseppe Peano,&nbsp;1915</li>
-                    <li><cite>Primo Libro de Interlingua Sive Latino Sine Flexione</cite>, Academia pro Interlingua,&nbsp;1931</li>
-                    <li><cite>Evolutione De Lingua Internationale</cite>, J.&nbsp;B.&nbsp;Pinth, 1926</li>
-                </ul>
-                <p>and a few more hundred pages in journals like <em>Discussiones</em> and <em>Schola et Vita</em>.</p>
-                <p class="note">Some scanned documents are available on the website of the <a href="https://archive.org/search.php?query=subject%3A%22Latino+sine+Flexione%22">Internet Archive&nbsp;</a></p>
-            </details>
-            <h3>Modern works</h3>
-            <ul>
-                <li><a href="https://www.reddit.com/r/latinosineflexione/wiki/traductiones">Traductions</a>, <code>r/latinosineflexione</code></li>
-                <li><a href="books/fabulas-electo.pdf">Fabulas Electo</a> (Choosen Fables), Aesopo (translated by Victore Leve)</li>
-                <li><a href="https://learnxinyminutes.com/">Learn X in Y minutes</a> (<code>lsf</code> category)</li>
-            </ul>
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <h2>Learn Peano's Interlingua</h2>
+                    <div class="columns">
+                        <div class="column">
+                            <h3>Grammar</h3>
+                            <p>Several documents have been published by Peano and his collaborators in order to expose
+                                the grammar of Latino sine flexione in the language itself (a <a
+                                    href="files/interlingua.pdf">booklet</a> [2019 retype], a <a
+                                    href="https://upload.wikimedia.org/wikipedia/commons/6/62/Manuale_Practico.pdf">practical
+                                    manual</a>, a <a href="files/interlingua.jpg">leaflet</a>, articles in journals… and
+                                the excellent <a href="https://archive.org/details/100-exemplo-de-Interlingua">Centum
+                                    exemplo de Interlingua</a>). The French and English Wikipedia pages are also quality
+                                resources.
+                            </p>
+                        </div>
+                        <div class="column">
+                            <h3>Vocabulary</h3>
+                            <p>As regards vocabulary, a Latin dictionary is theoretically sufficient to derive all the
+                                words you need, but to ensure greater internationality, lexicons of words — whose roots
+                                are shared by the languages of Europe — have been compiled by <a
+                                    href="https://wikisource.org/wiki/Vocabulario_commune_ad_latino-italiano-français-English-deutsch_pro_usu_de_interlinguistas">Peano</a>
+                                and recently by <a
+                                    href="http://latinosineflexione.pbworks.com/w/page/15120236/English%20-%20Latino%20sine%20flexione">Dave
+                                    MacLeod</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            </details>
-            <h2>Learning ressources</h2>
-            <p class="info">The absolute reference remains <cite><a href="scans/booklet.pdf">Interlingua</a></cite>, Giuseppe Peano, 1923, <a href="booklet.pdf">2019&nbsp;retype</a> but other ressources are available.</p>
-            <ul>
-                <li><a href="https://www.memrise.com/course/5630258/latino-sine-flexione/">Memrise course</a></li>
-                <li><a href="grammar.html">One-page grammar of Interlingua</a></li>
-                <li><cite><a href="https://wikisource.org/wiki/100_exemplo_de_Interlingua">100 exemplo de Interlingua</a></cite>, Giuseppe Peano,&nbsp;1903</li>
-                <li><a href="dictionary.html">English-Interlingua dictionary</a></li>
-                <li><a href="http://mi.anihost.ru/Peano/lsf.htm">English and Russian overviews</a></li>
-            </ul>
-            <p><strong>Join the community:</strong> <a href="https://discord.gg/udJNYHY">Discord</a> • <a href="https://www.reddit.com/r/LatinoSineFlexione">Reddit</a> • <a href="https://www.github.com/acproil">Github</a></li>
-            </p>
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <h2>Discover works</h2>
+                    <p>During the first wave of interest, thousands of pages were written in Interlingua, notably in the
+                        periodical <a href="https://archive.org/details/ScholaEtVitaAnnoI"><em>Schola and Vita</em></a>
+                        or as standalone academic publications (see <a
+                            href="https://archive.org/details/CipollaTheoriaDeCongruentias"><em>Theoria De
+                                Congruentias</em></a> by Michele Cipolla). Some are archived on the web but most can
+                        only be found in libraries. We must also mention the <em>Formulario Mathematico</em>, which was
+                        a landmark in the history of mathematics.</p>
+                    <p>Recently, we have started to work on the translation of classical texts, including Aesop's
+                        fables, biblical verses, the first chapters of <em>The Little Prince</em> and a few short
+                        stories.</p>
+                </div>
+                <!-- <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="title is-4">Tres quaestione</p>
+                                <p class="subtitle is-6">Leo Tolstoy</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="card-footer-item">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <h2>Meet and contribute</h2>
+                    <p>The success of an international language is measured by the number of its speakers and the
+                        diversity of its fields of application. The good news is that you can help us in both these
+                        areas.</p>
+                    <div class="columns">
+                        <div class="column">
+                            <h3>Meet Interlinguists</h3>
+                            <p>
+                                If you would like to know more or improve your language skills, please contact us on the
+                                following networks:
+                            </p>
+                            <a class="button is-outlined is-info"
+                                href="https://reddit.com/r/latinosineflexione"><span>Reddit</span></a>
+                            <a class="button is-outlined is-info"
+                                href="https://discord.gg/qQ4qntg"><span>Discord</span></a>
+                            <a class="button is-outlined is-info" href="#meet" disabled><span>Telegram</span></a>
+                            <a class="button is-outlined is-info"
+                                href="https://github.com/AcProIL"><span>GitHub</span></a>
+                        </div>
+                        <div class="column">
+                            <h3>Help us!</h3>
+                            <p>All the work presented above is licensed under the CC-BY-NC license and we will be only
+                                too happy to accept your pull requests or project ideas on GitHub.</p>
+                            <div class="message is-outlined is-info">
+                                <div class="message-body">
+                                    The <code>latino-sine-flexione</code> package is available on <a
+                                        href="https://www.ctan.org/pkg/latino-sine-flexione">CTAN</a> since October
+                                    2019.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+    <footer class="footer">
+        <div class="has-text-centered">
+            <p>Academia pro Interlingua — 2020</p>
+            <p>Designed by Victore Leve</p>
+        </div>
     </footer>
-</body></html>
+</body>
+
+</html>
