@@ -9,3 +9,7 @@ header.hero .title, header.hero .subtitle {
 .done {
     text-decoration: line-through;
 }
+
+[lang=lsf] * {
+    color: #028 !important;
+}
