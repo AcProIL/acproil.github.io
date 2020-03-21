@@ -65,7 +65,7 @@
 <script type="text/javascript">
     var dict;
 
-    $.getJSON('dict.json', function(data) {
+    $.getJSON('dicts/en-dict.json', function(data) {
         dict = data['dict'];
         document.getElementById('num').innerHTML = dict.length;
         show(Math.floor(Math.random() * dict.length));
