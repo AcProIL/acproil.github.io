@@ -1,0 +1,318 @@
+{
+    "dict": [{
+        "en": "sun",
+        "lsf": [{
+            "pos": "noun",
+            "translation": "sol"
+        }],
+        "examples": [{
+            "en": "The sun shines.",
+            "lsf": "Sol fulge."
+        }]
+    }, {
+        "en": "shine",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "fulge"
+        }],
+        "examples": [{
+            "en": "The sun shines.",
+            "lsf": "Sol fulge."
+        }]
+    }, {
+        "en": "man",
+        "lsf": [{
+            "pos": "noun",
+            "translation": "homine"
+        }, {
+            "pos": "noun",
+            "translation": "homo"
+        }],
+        "examples": [{
+            "en": "Men purpose, but God disposes.",
+            "lsf": "Homo propone, et Deo dispone."
+        }, {
+            "en": "a language that every cultured man understands",
+            "lsf": "lingua que omne homine culto intellige"
+        }]
+    }, {
+        "en": "come",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "veni"
+        }]
+    }, {
+        "en": "get",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "obtine"
+        }]
+    }, {
+        "en": "go",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "i"
+        }]
+    }, {
+        "en": "give",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "da"
+        }],
+        "examples": [{
+            "en": "The Academy gives the following advice.",
+            "lsf": "Academia da consilios sequente."
+        }]
+    }, {
+        "en": "advice",
+        "lsf": [{
+            "pos": "noun",
+            "translation": "consilio"
+        }],
+        "examples": [{
+            "en": "The Academy gives the following advice.",
+            "lsf": "Academia da consilios sequente."
+        }]
+    }, {
+        "en": "keep",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "serva"
+        }]
+    }, {
+        "en": "let",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "permitte"
+        }, {
+            "pos": "verb",
+            "translation": "loca"
+        }],
+        "examples": [{
+            "en": "I'll let you sleep.",
+            "lsf": "Me vol permitte dormi ad te."
+        }, {
+            "en": "You should let your house.",
+            "lsf": "Te debe loca tuo domo."
+        }]
+    }, {
+        "en": "make",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "fac"
+        }]
+    }, {
+        "en": "put",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "pone"
+        }]
+    }, {
+        "en": "seem",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "appere"
+        }]
+    }, {
+        "en": "take",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "prende"
+        }]
+    }, {
+        "en": "do",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "fac"
+        }]
+    }, {
+        "en": "be",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "es"
+        }],
+        "examples": [{
+            "en": "I am her brother.",
+            "lsf": "Me es suo fratre."
+        }]
+    }, {
+        "en": "have",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "habe"
+        }],
+        "examples": [{
+            "en": "I have a horse.",
+            "lsf": "Me habe equo."
+        }, {
+            "en": "I've already eaten.",
+            "lsf": "Me habe jam edeto."
+        }]
+    }, {
+        "en": "say",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "dice"
+        }]
+    }, {
+        "en": "see",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "vide"
+        }]
+    }, {
+        "en": "send",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "mitte"
+        }]
+    }, {
+        "en": "may",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "pote"
+        }]
+    }, {
+        "en": "will",
+        "lsf": [{
+            "pos": "verb",
+            "translation": "vol"
+        }, {
+            "pos": "noun",
+            "translation": "voluntate"
+        }]
+    }, {
+        "en": "about",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "circa"
+        }]
+    }, {
+        "en": "across",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "trans"
+        }]
+    }, {
+        "en": "after",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "post"
+        }]
+    }, {
+        "en": "against",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "contra"
+        }]
+    }, {
+        "en": "among",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "inter"
+        }]
+    }, {
+        "en": "at",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "ad"
+        }],
+        "examples": [{
+            "en": "at first glance",
+            "lsf": "ad primo visu"
+        }]
+    }, {
+        "en": "before",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "ante"
+        }, {
+            "pos": "adverb",
+            "translation": "ante"
+        }]
+    }, {
+        "en": "between",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "inter"
+        }]
+    }, {
+        "en": "by",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "ab"
+        }]
+    }, {
+        "en": "from",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "ex"
+        }, {
+            "pos": "preposition",
+            "translation": "ab"
+        }],
+        "examples": [{
+            "en": "from theoritical studies",
+            "lsf": "ex studios theorico"
+        }, {
+            "en": "from modern languages to Latin",
+            "lsf": "ab linguas moderno ad latino"
+        }]
+    }, {
+        "en": "in",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "in"
+        }]
+    }, {
+        "en": "on",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "super"
+        }]
+    }, {
+        "en": "through",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "per"
+        }]
+    }, {
+        "en": "to",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "ad"
+        }],
+        "examples": [{
+            "en": "To the reader",
+            "lsf": "Ad lectore"
+        }]
+    }, {
+        "en": "under",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "infra"
+        }, {
+            "pos": "preposition",
+            "translation": "sub"
+        }]
+    }, {
+        "en": "with",
+        "lsf": [{
+            "pos": "preposition",
+            "translation": "cum"
+        }, {
+            "pos": "conjunction",
+            "translation": "cum"
+        }]
+    }, {
+        "en": "than",
+        "lsf": [{
+            "pos": "adverb",
+            "translation": "quam"
+        }],
+        "examples": [{
+            "en": "You are wiser than me.",
+            "lsf": "Te es plus sapiente quam me."
+        }]
+    }]
+}

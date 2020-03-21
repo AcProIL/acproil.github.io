@@ -6,6 +6,7 @@
     <title>Dictionary</title>
     <link rel="stylesheet" type="text/css" href="master.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -61,18 +62,25 @@
         </div>
     </footer>
 </body>
-<script src="dict.js"></script>
 <script type="text/javascript">
+    var dict;
+
+    $.getJSON('dict.json', function(data) {
+        dict = data['dict'];
+        document.getElementById('num').innerHTML = dict.length;
+        show(Math.floor(Math.random() * dict.length));
+    });
+
     show = function(i) {
         document.getElementById('lsf').innerHTML = '';
         document.getElementById('search_input').value = dict[i].en;
         for (var j = 0; j < dict[i].lsf.length; j++) {
             var tr = dict[i].lsf[j];
-            document.getElementById('lsf').innerHTML += '<li>' + tr["translation"] + ' (' + tr["pos"] + ')</li>';
+            document.getElementById('lsf').innerHTML += '<li><strong>' + tr["pos"] + '</strong> ' + tr["translation"] + '</li>';
         }
 
         document.getElementById('examples').innerHTML = '';
-        if (dict[i].examples.length > 0) {
+        if (dict[i].examples) {
             for (var j = 0; j < dict[i].examples.length; j++) {
                 document.getElementById('examples').innerHTML +=
                     "<li>" + dict[i].examples[j]["en"] + " → " + dict[i].examples[j]["lsf"] + "</li>";
@@ -82,9 +90,6 @@
         }
     }
 
-    document.getElementById('num').innerHTML = dict.length;
-    show(Math.floor(Math.random() * dict.length));
-
     // S E A R C H
     search = function() {
         query = document.getElementById('search_input').value;
@@ -93,7 +98,6 @@
         }
         found = -1; // false
         for (var i = 0; i < dict.length; i++) {
-            console.log(query);
             if (query == dict[i].en) {
                 found = i;
                 break;
