@@ -37,13 +37,18 @@
                     <div class="content">
                         <h3>Translation(s)</h3>
                     </div>
-                    <p id="lsf"></p>
+                    <div class="content">
+                        <ul id="lsf"></ul>
+                    </div>
+
                 </div>
                 <div class="column">
                     <div class="content">
                         <h3>Example(s)</h3>
                     </div>
-                    <ul id="examples"></ul>
+                    <div class="content">
+                        <ul id="examples"></ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,14 +68,14 @@
         document.getElementById('search_input').value = dict[i].en;
         for (var j = 0; j < dict[i].lsf.length; j++) {
             var tr = dict[i].lsf[j];
-            document.getElementById('lsf').innerHTML += '→ ' + tr + '</br>';
+            document.getElementById('lsf').innerHTML += '<li>' + tr["translation"] + ' (' + tr["pos"] + ')</li>';
         }
 
         document.getElementById('examples').innerHTML = '';
         if (dict[i].examples.length > 0) {
             for (var j = 0; j < dict[i].examples.length; j++) {
                 document.getElementById('examples').innerHTML +=
-                    "<li>" + dict[i].examples[j] + "</li>";
+                    "<li>" + dict[i].examples[j]["en"] + " → " + dict[i].examples[j]["lsf"] + "</li>";
             }
         } else {
             document.getElementById('examples').innerHTML = 'No example available.';
