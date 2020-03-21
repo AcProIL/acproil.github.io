@@ -1,7 +1,5 @@
-dict = [
-        {
-            "en": "against",
-            "lsf": "contra",
-            "examples": []
-        }
-    ];
+dict = [{
+    "en": "against",
+    "lsf": "contra",
+    "examples": []
+}];
