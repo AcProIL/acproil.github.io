@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Dictionnary</title>
+    <link rel="stylesheet" type="text/css" href="master.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">English → Latino sine flexione</h1>
+                <p class="subtitle is-3"><span id="num"></span> words and expressions</p>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <div class="field has-addons">
+                <div class="control is-expanded">
+                    <input class="input" type="text" id="search_input" placeholder="apple">
+                </div>
+                <div class="control">
+                    <button class="button is-info" onclick="search()">
+                        Search
+                    </button>
+                </div>
+            </div>
+            <div class="content">
+                <hr>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="content">
+                        <h3>Translation(s)</h3>
+                    </div>
+                    <p>→ <span id="lsf"></span></p>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <h3>Example(s)</h3>
+                    </div>
+                    <ul id="examples"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="has-text-centered">
+            <p>Academia pro Interlingua — 2020</p>
+            <p>Designed by Victore Leve</p>
+            <p><a href="http://reddit.com/r/latinosineflexione/">r/latinosineflexione</a></p>
+        </div>
+    </footer>
+</body>
+<script src="dict.js"></script>
+<script type="text/javascript">
+    show = function(i) {
+        document.getElementById('search_input').value = dict[i].en;
+        document.getElementById('lsf').innerHTML = dict[i].lsf;
+
+        document.getElementById('examples').innerHTML = '';
+        if (dict[i].examples.length > 0) {
+            for (var j = 0; j < dict[i].examples.length; j++) {
+                document.getElementById('examples').innerHTML +=
+                    "<li>" + dict[i].examples[j] + "</li>";
+            }
+        } else {
+            document.getElementById('examples').innerHTML = 'No example available.';
+        }
+    }
+
+    // init();
+    document.getElementById('num').innerHTML = dict.length;
+    show(Math.floor(Math.random() * dict.length));
+
+    // S E A R C H
+    search = function() {
+        query = document.getElementById('search_input').value;
+        if (query == '') {
+            return;
+        }
+        found = -1; // false
+        for (var i = 0; i < dict.length; i++) {
+            console.log(query);
+            if (query == dict[i].en) {
+                found = i;
+                break;
+            }
+        }
+        if (found < 0) {
+            document.getElementById('lsf').innerHTML = '';
+            document.getElementById('examples').innerHTML = '';
+        } else {
+            show(found);
+        }
+    }
+
+    document.getElementById('search_input').onkeypress = function(event) {
+        if (event.keyCode == 13 || event.which == 13) {
+            search();
+        }
+    };
+</script>
+
+</html>
