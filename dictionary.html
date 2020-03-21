@@ -37,7 +37,7 @@
                     <div class="content">
                         <h3>Translation(s)</h3>
                     </div>
-                    <p>→ <span id="lsf"></span></p>
+                    <p id="lsf"></p>
                 </div>
                 <div class="column">
                     <div class="content">
@@ -59,8 +59,12 @@
 <script src="dict.js"></script>
 <script type="text/javascript">
     show = function(i) {
+        document.getElementById('lsf').innerHTML = '';
         document.getElementById('search_input').value = dict[i].en;
-        document.getElementById('lsf').innerHTML = dict[i].lsf;
+        for (var j = 0; j < dict[i].lsf.length; j++) {
+            var tr = dict[i].lsf[j];
+            document.getElementById('lsf').innerHTML += '→ ' + tr + '</br>';
+        }
 
         document.getElementById('examples').innerHTML = '';
         if (dict[i].examples.length > 0) {
@@ -73,7 +77,6 @@
         }
     }
 
-    // init();
     document.getElementById('num').innerHTML = dict.length;
     show(Math.floor(Math.random() * dict.length));
 
