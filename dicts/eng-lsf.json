@@ -1,4 +1,11 @@
 [{
+        "eng": "able",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "habile"
+        }]
+    },
+    {
         "eng": "about",
         "lsf": [{
             "pos": "preposition",
@@ -129,6 +136,17 @@
         }]
     },
     {
+        "eng": "as",
+        "examples": [{
+            "eng": "as an auxiliary language",
+            "lsf": "ut lingua auxiliare"
+        }],
+        "lsf": [{
+            "pos": "conjunction",
+            "translation": "ut"
+        }]
+    },
+    {
         "eng": "at",
         "examples": [{
             "eng": "at first glance",
@@ -237,6 +255,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "nativitate"
+        }]
+    },
+    {
+        "eng": "black",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "nigro"
         }]
     },
     {
@@ -450,10 +475,24 @@
         }]
     },
     {
+        "eng": "common",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "commune"
+        }]
+    },
+    {
         "eng": "comparison",
         "lsf": [{
             "pos": "noun",
             "translation": "comparatione"
+        }]
+    },
+    {
+        "eng": "complex",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "complexo"
         }]
     },
     {
@@ -538,6 +577,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "gradu"
+        }]
+    },
+    {
+        "eng": "dependent",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "dependente"
         }]
     },
     {
@@ -667,10 +713,31 @@
         }]
     },
     {
+        "eng": "elastic",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "elastico"
+        }]
+    },
+    {
+        "eng": "electric",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "electrico"
+        }]
+    },
+    {
         "eng": "engine",
         "lsf": [{
             "pos": "noun",
             "translation": "ingenio"
+        }]
+    },
+    {
+        "eng": "equal",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "aequale"
         }]
     },
     {
@@ -765,6 +832,13 @@
         }]
     },
     {
+        "eng": "fertile",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "fertile"
+        }]
+    },
+    {
         "eng": "fiction",
         "lsf": [{
             "pos": "noun",
@@ -783,6 +857,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "digito"
+        }]
+    },
+    {
+        "eng": "first",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "primo"
         }]
     },
     {
@@ -856,6 +937,20 @@
         }]
     },
     {
+        "eng": "free",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "libero"
+        }]
+    },
+    {
+        "eng": "frequent",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "frequente"
+        }]
+    },
+    {
         "eng": "friend",
         "lsf": [{
             "pos": "noun",
@@ -891,10 +986,24 @@
         }]
     },
     {
+        "eng": "full",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "pleno"
+        }]
+    },
+    {
         "eng": "garden",
         "lsf": [{
             "pos": "noun",
             "translation": "horto"
+        }]
+    },
+    {
+        "eng": "general",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "generale"
         }]
     },
     {
@@ -944,6 +1053,13 @@
         }]
     },
     {
+        "eng": "good",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "bene"
+        }]
+    },
+    {
         "eng": "grain",
         "lsf": [{
             "pos": "noun",
@@ -976,6 +1092,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "manu"
+        }]
+    },
+    {
+        "eng": "hard",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "duro"
         }]
     },
     {
@@ -1027,6 +1150,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "adjutu"
+        }]
+    },
+    {
+        "eng": "high",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "alto"
         }]
     },
     {
@@ -1083,6 +1213,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "idea"
+        }]
+    },
+    {
+        "eng": "important",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "importante"
         }]
     },
     {
@@ -1296,6 +1433,13 @@
         }]
     },
     {
+        "eng": "long",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "longo"
+        }]
+    },
+    {
         "eng": "love",
         "lsf": [{
             "pos": "noun",
@@ -1499,6 +1643,20 @@
         }]
     },
     {
+        "eng": "natural",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "naturale"
+        }]
+    },
+    {
+        "eng": "necessary",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "necessario"
+        }]
+    },
+    {
         "eng": "neck",
         "lsf": [{
             "pos": "noun",
@@ -1527,6 +1685,13 @@
         }]
     },
     {
+        "eng": "new",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "novo"
+        }]
+    },
+    {
         "eng": "night",
         "lsf": [{
             "pos": "noun",
@@ -1538,6 +1703,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "strepitu"
+        }]
+    },
+    {
+        "eng": "normal",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "normale"
         }]
     },
     {
@@ -1632,6 +1804,13 @@
         }]
     },
     {
+        "eng": "parallel",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "parallelo"
+        }]
+    },
+    {
         "eng": "part",
         "lsf": [{
             "pos": "noun",
@@ -1695,10 +1874,24 @@
         }]
     },
     {
+        "eng": "poor",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "paupere"
+        }]
+    },
+    {
         "eng": "position",
         "lsf": [{
             "pos": "noun",
             "translation": "positione"
+        }]
+    },
+    {
+        "eng": "possible",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "possibile"
         }]
     },
     {
@@ -1716,6 +1909,13 @@
         }]
     },
     {
+        "eng": "present",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "praesenta"
+        }]
+    },
+    {
         "eng": "price",
         "lsf": [{
             "pos": "noun",
@@ -1727,6 +1927,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "carcere"
+        }]
+    },
+    {
+        "eng": "probable",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "probabile"
         }]
     },
     {
@@ -1814,10 +2021,24 @@
         }]
     },
     {
+        "eng": "ready",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "prompto"
+        }]
+    },
+    {
         "eng": "reason",
         "lsf": [{
             "pos": "noun",
             "translation": "ratione"
+        }]
+    },
+    {
+        "eng": "regular",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "regulare"
         }]
     },
     {
@@ -1860,6 +2081,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "rhythmo"
+        }]
+    },
+    {
+        "eng": "right",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "recto"
         }]
     },
     {
@@ -1975,6 +2203,13 @@
         }]
     },
     {
+        "eng": "second",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "secundo"
+        }]
+    },
+    {
         "eng": "see",
         "lsf": [{
             "pos": "verb",
@@ -2028,28 +2263,6 @@
         "lsf": [{
             "pos": "noun",
             "translation": "ove"
-        }]
-    },
-    {
-        "eng": "to",
-        "lsf": [{
-            "pos": "conjunction",
-            "translation": "ut"
-        }],
-        "examples": [{
-            "lsf": "Nos ede ut vive.",
-            "eng": "We eat to live."
-        }]
-    },
-    {
-        "eng": "as",
-        "lsf": [{
-            "pos": "conjunction",
-            "translation": "ut"
-        }],
-        "examples": [{
-            "lsf": "ut lingua auxiliare",
-            "eng": "as an auxiliary language"
         }]
     },
     {
@@ -2232,6 +2445,13 @@
         }]
     },
     {
+        "eng": "strong",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "forte"
+        }]
+    },
+    {
         "eng": "structure",
         "lsf": [{
             "pos": "noun",
@@ -2331,6 +2551,13 @@
         }]
     },
     {
+        "eng": "thick",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "spisso"
+        }]
+    },
+    {
         "eng": "thing",
         "lsf": [{
             "pos": "noun",
@@ -2377,6 +2604,17 @@
         }]
     },
     {
+        "eng": "to",
+        "examples": [{
+            "eng": "We eat to live.",
+            "lsf": "Nos ede ut vive."
+        }],
+        "lsf": [{
+            "pos": "conjunction",
+            "translation": "ut"
+        }]
+    },
+    {
         "eng": "tongue",
         "lsf": [{
             "pos": "noun",
@@ -2402,6 +2640,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "arbore"
+        }]
+    },
+    {
+        "eng": "true",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "vero"
         }]
     },
     {
@@ -2438,6 +2683,13 @@
         }]
     },
     {
+        "eng": "violent",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "violento"
+        }]
+    },
+    {
         "eng": "voice",
         "lsf": [{
             "pos": "noun",
@@ -2449,6 +2701,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "bello"
+        }]
+    },
+    {
+        "eng": "warm",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "calido"
         }]
     },
     {
@@ -2491,6 +2750,20 @@
         "lsf": [{
             "pos": "noun",
             "translation": "hebdomade"
+        }]
+    },
+    {
+        "eng": "wet",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "madido"
+        }]
+    },
+    {
+        "eng": "wide",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "lato"
         }]
     },
     {
@@ -2538,6 +2811,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "hieme"
+        }]
+    },
+    {
+        "eng": "wise",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "sapiente"
         }]
     },
     {
@@ -2592,6 +2872,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "anno"
+        }]
+    },
+    {
+        "eng": "young",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "juvene"
         }]
     }
 ]
