@@ -1,49 +1,52 @@
 var dict;
 
-$.getJSON('dicts/' + lang + '-dict.json', function(data) {
-    dict = data['dict'];
-    document.getElementById('num').innerHTML = dict.length;
-    show(Math.floor(Math.random() * dict.length));
-});
+var from_select = document.getElementById('from-select');
+var to_select = document.getElementById('to-select');
 
 show = function(i) {
-    document.getElementById('lsf').innerHTML = '';
-    document.getElementById('search_input').value = dict[i][lang];
-    for (var j = 0; j < dict[i].lsf.length; j++) {
-        var tr = dict[i].lsf[j];
-        document.getElementById('lsf').innerHTML += '<li><strong>' + tr["pos"] + '</strong> ' + tr["translation"] + '</li>';
+    document.getElementById('to').innerHTML = '';
+    for (var j = 0; j < dict[i][to].length; j++) {
+        var tr = dict[i][to][j];
+        document.getElementById('to').innerHTML += '<li><strong>' + tr["pos"] + '</strong> ' + tr["translation"] + '</li>';
     }
 
-    document.getElementById('examples').innerHTML = '';
+    $('#examples').html('');
+    $('#examples-col').addClass('is-hidden');
     if (dict[i].examples) {
+        $('#examples-col').removeClass('is-hidden');
         for (var j = 0; j < dict[i].examples.length; j++) {
             document.getElementById('examples').innerHTML +=
-                "<li>" + dict[i].examples[j][lang] + " → " + dict[i].examples[j].lsf + "</li>";
+                "<li>" + dict[i].examples[j][from] + " → " + dict[i].examples[j][to] + "</li>";
         }
-    } else {
-        document.getElementById('examples').innerHTML = 'No example available.';
     }
 }
 
 // S E A R C H
 search = function() {
-    query = document.getElementById('search_input').value;
-    if (query == '') {
-        return;
-    }
-    found = -1; // false
-    for (var i = 0; i < dict.length; i++) {
-        if (query == dict[i][lang]) {
-            found = i;
-            break;
+    from = from_select.options[from_select.selectedIndex].text;
+    to = to_select.options[to_select.selectedIndex].text;
+
+    $.getJSON('dicts/' + from + '-' + to + '.json', function(data) {
+        dict = data;
+        query = document.getElementById('search_input').value;
+        if (query == '') {
+            return;
         }
-    }
-    if (found < 0) {
-        document.getElementById('lsf').innerHTML = '';
-        document.getElementById('examples').innerHTML = '';
-    } else {
-        show(found);
-    }
+        $('#query').html(query);
+        found = -1; // false
+        for (var i = 0; i < dict.length; i++) {
+            if (query == dict[i][from]) {
+                found = i;
+                break;
+            }
+        }
+        if (found < 0) {
+            document.getElementById('to').innerHTML = '';
+            document.getElementById('examples').innerHTML = '';
+        } else {
+            show(found);
+        }
+    });
 }
 
 document.getElementById('search_input').onkeypress = function(event) {
