@@ -44,7 +44,10 @@
         <div class="hero-body">
             <div class="container">
                 <h1 class="title is-1">Latino sine flexione dictionaries</h1>
-                <p id="num" class="title title is-3"></p>
+                <p class="title title is-3">
+                    <span id="pair"></span><br>
+                    <span id="num"></span> vocables
+                </p>
             </div>
         </div>
     </header>
@@ -52,7 +55,7 @@
         <div class="container">
             <div id="error" class="message is-outlined is-danger is-hidden">
                 <div class="message-body">
-                    <p>Unavailable anguage pair</p>
+                    <p>Unavailable language pair</p>
                 </div>
             </div>
             <div class="field has-addons">
@@ -66,7 +69,7 @@
                     </div>
                 </div>
                 <div class="control">
-                    <div class="select">
+                    <div class="select" onchange="search()">
                         <select id="to-select">
                           <option>eng</option>
                           <option>fra</option>

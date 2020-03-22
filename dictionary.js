@@ -48,11 +48,13 @@ search = function() {
         }
     }).fail(function() {
         $('#error').removeClass('is-hidden')
-        $('#num').html('');
+        $('#num').html(0);
     }).done(function() {
         $('#error').addClass('is-hidden')
-        $('#num').html(dict.length + ' vocables');
-    });
+        $('#num').html(dict.length);
+    })
+
+    $('#pair').html(from + ' → ' + to);
 }
 
 document.getElementById('search_input').onkeypress = function(event) {
