@@ -11,7 +11,6 @@ show = function(i) {
     }
 
     $('#examples').html('');
-    $('#examples-col').addClass('is-hidden');
     if (dict[i].examples) {
         $('#examples-col').removeClass('is-hidden');
         for (var j = 0; j < dict[i].examples.length; j++) {
@@ -40,6 +39,7 @@ search = function() {
                 break;
             }
         }
+        $('#examples-col').addClass('is-hidden');
         if (found < 0) {
             document.getElementById('to').innerHTML = '';
             document.getElementById('examples').innerHTML = '';
