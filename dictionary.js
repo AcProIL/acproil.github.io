@@ -46,6 +46,12 @@ search = function() {
         } else {
             show(found);
         }
+    }).fail(function() {
+        $('#error').removeClass('is-hidden')
+        $('#num').html('');
+    }).done(function() {
+        $('#error').addClass('is-hidden')
+        $('#num').html(dict.length + ' vocables');
     });
 }
 
@@ -54,3 +60,5 @@ document.getElementById('search_input').onkeypress = function(event) {
         search();
     }
 };
+
+search(); // Init dictionary
