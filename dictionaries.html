@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Dictionaries</title>
-    <link rel="stylesheet" type="text/css" href="master.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latino sine flexione dictionaries</title>
+    <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -44,71 +44,27 @@
         <div class="hero-body">
             <div class="container">
                 <h1 class="title is-1">Latino sine flexione dictionaries</h1>
-                <p class="title title is-3">
-                    <span id="pair"></span><br>
-                    <span id="num"></span> vocables
-                </p>
             </div>
         </div>
     </header>
-    <div class="section">
-        <div class="container">
-            <div id="error" class="message is-outlined is-danger is-hidden">
-                <div class="message-body">
-                    <p>Unavailable language pair</p>
-                </div>
-            </div>
-            <div class="field has-addons">
-                <div class="control">
-                    <div class="select">
-                        <select id="from-select">
-                          <option selected="selected">eng</option>
-                          <option>fra</option>
-                          <option>lsf</option>
-                        </select>
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h2 class="title is-2">🇬🇧 English</h2>
+                        <a href="files/lsf-eng.pdf" class="button">Interlingua → English</a>
+                        <a href="files/eng-lsf.pdf" class="button">English → Interlingua</a>
                     </div>
-                </div>
-                <div class="control">
-                    <div class="select" onchange="search()">
-                        <select id="to-select">
-                          <option>eng</option>
-                          <option>fra</option>
-                          <option selected="selected">lsf</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="control is-expanded">
-                    <input class="input" type="text" id="search_input" placeholder="apple">
-                </div>
-                <div class="control">
-                    <button class="button is-info" onclick="search()">
-                        Search
-                    </button>
-                </div>
-            </div>
-            <div class="content">
-                <hr>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="content">
-                        <h3 id="query"></h3>
-                    </div>
-                    <div class="content">
-                        <ul id="to" class="arrow"></ul>
-                    </div>
-                </div>
-                <div id="examples-col" class="column is-hidden">
-                    <div class="content">
-                        <h3>🗣️</h3>
-                    </div>
-                    <div class="content">
-                        <ul id="examples"></ul>
+                    <div class="column">
+                        <h2 class="title is-2">🇫🇷 Français</h2>
+                        <a href="files/lsf-fra.pdf" class="button">Interlingua → Français</a>
+                        <a href="files/fra-eng.pdf" class="button">Français → Interlingua</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
     <footer class="footer">
         <div class="has-text-centered">
             <p>Academia pro Interlingua — 2020</p>
@@ -117,6 +73,5 @@
         </div>
     </footer>
 </body>
-<script src="dictionary.js"></script>
 
 </html>
