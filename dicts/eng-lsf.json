@@ -172,6 +172,13 @@
         }]
     },
     {
+        "eng": "bad",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "malo"
+        }]
+    },
+    {
         "eng": "balance",
         "lsf": [{
             "pos": "noun",
@@ -255,6 +262,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "nativitate"
+        }]
+    },
+    {
+        "eng": "bitter",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "amaro"
         }]
     },
     {
@@ -524,6 +538,13 @@
         }]
     },
     {
+        "eng": "cruel",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "crudele"
+        }]
+    },
+    {
         "eng": "curve",
         "lsf": [{
             "pos": "noun",
@@ -545,10 +566,24 @@
         }]
     },
     {
+        "eng": "dark",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "tenebroso"
+        }]
+    },
+    {
         "eng": "day",
         "lsf": [{
             "pos": "noun",
             "translation": "die"
+        }]
+    },
+    {
+        "eng": "dead",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "mortuo"
         }]
     },
     {
@@ -598,6 +633,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "destructione"
+        }]
+    },
+    {
+        "eng": "different",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "differente"
         }]
     },
     {
@@ -668,6 +710,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "gutta"
+        }]
+    },
+    {
+        "eng": "dry",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "sicco"
         }]
     },
     {
@@ -804,6 +853,13 @@
         }]
     },
     {
+        "eng": "false",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "falso"
+        }]
+    },
+    {
         "eng": "family",
         "lsf": [{
             "pos": "noun",
@@ -829,6 +885,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "penna"
+        }]
+    },
+    {
+        "eng": "feeble",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "flebile"
         }]
     },
     {
@@ -1064,6 +1127,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "grano"
+        }]
+    },
+    {
+        "eng": "green",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "viride"
         }]
     },
     {
@@ -1335,6 +1405,13 @@
         }]
     },
     {
+        "eng": "last",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "ultimo"
+        }]
+    },
+    {
         "eng": "laugh",
         "lsf": [{
             "pos": "noun",
@@ -1353,6 +1430,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "folio"
+        }]
+    },
+    {
+        "eng": "left",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "sinistro"
         }]
     },
     {
@@ -1965,6 +2049,13 @@
         }]
     },
     {
+        "eng": "public",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "publico"
+        }]
+    },
+    {
         "eng": "purpose",
         "lsf": [{
             "pos": "noun",
@@ -2126,10 +2217,31 @@
         }]
     },
     {
+        "eng": "rough",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "aspero"
+        }]
+    },
+    {
         "eng": "rule",
         "lsf": [{
             "pos": "noun",
             "translation": "regula"
+        }]
+    },
+    {
+        "eng": "sad",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "triste"
+        }]
+    },
+    {
+        "eng": "safe",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "salvo"
         }]
     },
     {
@@ -2207,6 +2319,13 @@
         "lsf": [{
             "pos": "adjective",
             "translation": "secundo"
+        }]
+    },
+    {
+        "eng": "secret",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "secreto"
         }]
     },
     {
@@ -2298,6 +2417,13 @@
         }]
     },
     {
+        "eng": "short",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "curto"
+        }]
+    },
+    {
         "eng": "side",
         "lsf": [{
             "pos": "noun",
@@ -2326,6 +2452,13 @@
         }]
     },
     {
+        "eng": "simple",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "simplice"
+        }]
+    },
+    {
         "eng": "sister",
         "lsf": [{
             "pos": "noun",
@@ -2337,6 +2470,13 @@
         "lsf": [{
             "pos": "noun",
             "translation": "caelo"
+        }]
+    },
+    {
+        "eng": "slow",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "lento"
         }]
     },
     {
@@ -2358,6 +2498,20 @@
         "lsf": [{
             "pos": "noun",
             "translation": "societate"
+        }]
+    },
+    {
+        "eng": "soft",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "molle"
+        }]
+    },
+    {
+        "eng": "solid",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "solido"
         }]
     },
     {
@@ -2401,6 +2555,13 @@
                 "translation": "oratore"
             }
         ]
+    },
+    {
+        "eng": "special",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "speciale"
+        }]
     },
     {
         "eng": "sponge",
@@ -2555,6 +2716,13 @@
         "lsf": [{
             "pos": "adjective",
             "translation": "spisso"
+        }]
+    },
+    {
+        "eng": "thin",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "tenue"
         }]
     },
     {
@@ -2757,6 +2925,13 @@
         "lsf": [{
             "pos": "adjective",
             "translation": "madido"
+        }]
+    },
+    {
+        "eng": "white",
+        "lsf": [{
+            "pos": "adjective",
+            "translation": "albo"
         }]
     },
     {
