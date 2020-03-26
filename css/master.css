@@ -1,0 +1,81 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600&display=swap');
+@import 'links.css';
+@import 'level.css';
+
+/* Styles */
+
+:root {
+    --primary: #c68;
+}
+
+body {
+    background-color: #fffcfc;
+    color: #444;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14pt;
+    margin: auto;
+    margin-top: 6em;
+    max-width: 1000px;
+    width: 80%;
+}
+
+header h2 {
+    font-size: 2.75em;
+}
+
+header h1,
+main h2 {
+    font-size: 1.5em;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+}
+
+main h2 {
+    margin-top: 3em;
+}
+
+blockquote {
+    margin: 0;
+    padding-left: 1.5em;
+    border-left: solid 6px #ccc;
+}
+
+blockquote p {
+    font-style: italic;
+}
+
+.comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, auto));
+    grid-gap: 2em;
+}
+
+.comparison p {
+    margin: 0;
+}
+
+.disabled {
+    opacity: .2;
+}
+
+body>footer {
+    opacity: .6;
+    padding: 2em;
+    border-top: 1px solid;
+    margin-top: 2em;
+}
+
+footer table {
+    margin: auto;
+}
+
+table {
+    text-align: left;
+}
+
+table td,
+table th {
+    min-width: 6em;
+}

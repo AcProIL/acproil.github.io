@@ -1,0 +1,20 @@
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--primary);
+    transition-duration: .2s;
+}
+
+a.button {
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 1px 1px 2px 2px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    padding: 1em 2em;
+}

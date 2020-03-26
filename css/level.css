@@ -1,0 +1,24 @@
+.level {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    grid-gap: 3em;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.level-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.level-item img {
+    height: 5em;
+    border-radius: 50%;
+}
+
+.level-item span {
+    margin-top: 2em;
+}
