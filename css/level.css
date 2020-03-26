@@ -20,5 +20,6 @@
 }
 
 .level-item span {
-    margin-top: 2em;
+    display: block;
+    margin-top: 1em;
 }
