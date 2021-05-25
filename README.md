@@ -1,4 +1,4 @@
 # `acproil.github.io`
 
-The aim of this site is to present and give tools to master and spread the
-conlang created by Giuseppe Peano: Latino sine flexione.
+This is the first site entirely dedicated to the interlingua Giuseppe Peano.
+Resources are presented to easily learn the language and to start conversing with the community.
